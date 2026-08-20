@@ -1,7 +1,7 @@
 import { getDeviceId } from './device.js';
 
-const API_BASE = 'http://localhost:3000/api';
-// const API_BASE = 'https://cookie-be.securedapp.io/api';
+// const API_BASE = 'http://localhost:3000/api';
+const API_BASE = 'https://cookie-be.securedapp.io/api';
 
 export async function fetchConfig(tenantId, appId) {
   try {

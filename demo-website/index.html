@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank123 - Demo Portal</title>
+    <title>ICICI Bank - Demo Portal</title>
     <!-- Include SDK CSS -->
     <link rel="stylesheet" href="../sdk/dist/cookie-consent-sdk.css">
 
@@ -288,7 +288,7 @@
                 </h3>
                 <div class="status-item">User ID: <strong id="val-user-id">None (Anonymous)</strong></div>
                 <div class="status-item">Tenant ID: <strong>ICICI Bank</strong> | App: <strong>hdfc</strong></div>
-                <div class="status-item">IdP / Issuer: <strong id="val-jwt-issuer">http://localhost:4000</strong></div>
+                <div class="status-item">IdP / Issuer: <strong id="val-jwt-issuer">https://cookie-demo-be.securedapp.io</strong></div>
                 <div class="status-item">Signing Key: <strong>RS256 (JWKS Verified)</strong></div>
                 <div class="status-item">
                     Client JWT Token:
@@ -328,7 +328,7 @@
         let currentActiveToken = null;
         const tenantId = 'ICICI Bank';
         const appId = 'hdfc';
-        const clientAuthServer = 'http://localhost:4000';
+        const clientAuthServer = 'https://cookie-demo-be.securedapp.io';
 
         // Logger helper
         const devConsole = document.getElementById('dev-console');
