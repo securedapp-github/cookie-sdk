@@ -49,19 +49,19 @@ flowchart TB
         ConfigDB[("Consent & Policy Database")]
     end
 
-    Browser -->|1. Page Load & Init| SDK
-    SDK -->|2. Fetch App Config & Policy| ConsentBE
+    Browser -->|"1. Page Load & Init"| SDK
+    SDK -->|"2. Fetch App Config & Policy"| ConsentBE
     ConsentBE --> ConfigDB
     
-    Browser -->|3. User Selects Preferences| SDK
-    SDK -->|4. Unpark & Inject Allowed Scripts| ParkedScripts
-    SDK -->|5. Save Device Consent| ConsentBE
+    Browser -->|"3. User Selects Preferences"| SDK
+    SDK -->|"4. Unpark & Inject Allowed Scripts"| ParkedScripts
+    SDK -->|"5. Save Device Consent"| ConsentBE
 
-    Browser -->|6. User Logs In| ClientBE
-    ClientBE -->|7. Returns Signed RS256 JWT| Browser
-    Browser -->|8. CookieConsent.loginUser(JWT)| SDK
-    SDK -->|9. Link Consent with Auth Header| ConsentBE
-    ConsentBE -->|10. Validates JWT via JWKS| ClientBE
+    Browser -->|"6. User Logs In"| ClientBE
+    ClientBE -->|"7. Returns Signed RS256 JWT"| Browser
+    Browser -->|"8. CookieConsent.loginUser(JWT)"| SDK
+    SDK -->|"9. Link Consent with Auth Header"| ConsentBE
+    ConsentBE -->|"10. Validates JWT via JWKS"| ClientBE
 ```
 
 ### Component Roles
